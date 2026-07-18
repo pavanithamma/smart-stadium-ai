@@ -132,7 +132,7 @@ export default function App() {
 
     try {
       // Connect to local Node engine microservice if active, else serve AI fallback layer
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch('https://smart-stadium-ai-8z3f.onrender.com/api/chat', { {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
